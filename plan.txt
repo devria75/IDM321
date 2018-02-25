@@ -1,0 +1,33 @@
+User Should:
+input their name, birthday, and height (maybe a checkbox for how flexible they are as a person?)
+
+on this page they must see the 12 wood types that they could receive (maybe just 4 wood types and the 5 cores and potential lengths)
+
+after pressing submit:
+the screen fades to white then to overlay black at 70%
+on top is the wand in the center
+below is description
+    ex: your wand is 11 and 3/4 inch oak with a dragonscale core. It is slightly springy.*
+
+
+the length is based off the user's height.
+    8" wand = 0 - 4'
+    9" wand = 4' - 5'
+    10" wand = 5' - 5'8'
+    11" wand = 5'9" - 6'8"
+    12" wand = 6'9" - max
+the fractions are a random generation 1-5:
+    1/4", 1/2", 3/4", 1/3", 2/3"
+    (1)   (2)   (3)   (4)   (5)
+
+Wand woods (12):
+    oak, birch, redwood, ash, hawthorn, cherry, cedar, walnut, rosewood, pine, dogwood, ginko
+
+Cores (8):
+    dragon heartstring, unicorn horn, pheonix feather, hippogriff hair, veela hair, mermaid scale, thestral tail-hair, troll whisker
+
+flexibility*:
+    inflexible, slightly springy, flexible, springy
+
+*may not be used
+
