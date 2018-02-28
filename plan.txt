@@ -31,3 +31,6 @@ flexibility*:
 
 *may not be used
 
+TO DO:
+
+change the displayed text element in java based off which sign it is

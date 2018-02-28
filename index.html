@@ -24,6 +24,8 @@
         <div class="control">
             <input type="submit" value="Submit" id="submit">
         </div> -->
+        <label for="name">First Name:</label><br>
+        <input type="text" name="nameInput" id="nameInput" placeholder="Jessica" required><br>
         <label for="date">Birthday:</label><br>
         <input type="date" name="date" id="date" value="1980-02-22" required>
         <p class="feedback" hidden>Please Enter a Valid Date</p>
@@ -31,6 +33,13 @@
             <input type="submit" value="Submit" id="submit">
         </div>
     </form>
+
+    <!-- Wand woods (12):
+    oak, birch, redwood, ash, hawthorn, cherry, cedar, walnut, rosewood, pine, dogwood, ginko -->
+    <div id="wandDetails" hidden>
+        <h2>Your Wand</h2>
+        <p>your wand's description is thus. Your wand is 11 inches, made of rosewood and dragon heartstring.</p>
+    </div>
 
     <script src="main.js"></script>
 </body>
