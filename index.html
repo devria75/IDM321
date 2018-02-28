@@ -6,23 +6,32 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="master.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <h1>Welcome to Wanda's Wizarding Wands</h1>
     <p>Please enter the your information below, or hover over the help icon if you're confused.</p>
-    <form>
-        <fieldset>
-          <legend>Wand Information</legend>
-          First name:<br>
-          <input type="text" name="firstname" value="name" id="nameInput"><br>
-          Birthday:<br>
-          <input type="date" name="birthday" id="birthdayInput"><br>
-          Height:<br>
-          <input type="number" min="0" max="8"id="heightFeetInput">
-          <input type="number" min="0" max"11" id="heightInchesInput"><br><br>
-          <input type="button" value="Submit" id="submitButton">
-        </fieldset>
-      </form>
+    <form action"index.html" method="post" id="myForm" name="myForm">
+        <!-- <legend>Wand Information</legend>
+        First name:<br>
+        <input type="text" value="Jessica"name="nameInput" id="nameInput" placeholder="Jessica" required><br>
+        <label for="date">Birthday:</label><br>
+        <input type="date" name="birthdayInput" id="birthdayInput" required><br>
+        <label for="heightFeet">Height:</label>
+        <input type="number" value="5"name="heightFeetInput" min="0" max="8" id="heightFeetInput" required>
+        <label for="heightInches"></label>
+        <input type="number" value="4"name="heightInchesInput" min="0" max="11" id="heightInchesInput" required>
+        <br><br>
+        <div class="control">
+            <input type="submit" value="Submit" id="submit">
+        </div> -->
+        <label for="date">Birthday:</label><br>
+        <input type="date" name="date" id="date" value="1980-02-22" required>
+        <p class="feedback" hidden>Please Enter a Valid Date</p>
+        <div class="control">
+            <input type="submit" value="Submit" id="submit">
+        </div>
+    </form>
+
+    <script src="main.js"></script>
 </body>
 </html>
