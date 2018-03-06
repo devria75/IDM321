@@ -15,46 +15,48 @@ function handleFormSubmit(event){
         feedbackDate.hidden = false;
     } else {
         feedbackDate.hidden = true;
-        loadSign(myDate);
     }
 
     //console.log('Form Submitted', event);
-    console.group('Selecyed Date Information');
-    console.log('myDate: ${myDate}');
+    // console.group('Selecyed Date Information');
+    // console.log('myDate: ' + myDate);
 
-    console.log('Month: ${myDate.getUTCMonth()}');
-    console.log('Day: ${myDate.getUTCDay()}');
-    console.log('Year: ${myDate.getUTCFullYear()}');
+    // console.log('Month: '+ myDate.getUTCMonth());
+    // console.log('Day: '+myDate.getUTCDate());
+    // console.log('Year: '+myDate.getUTCFullYear());
 
-    console.groupEnd();
+    // console.groupEnd();
 
     const month = myDate.getUTCMonth();
-    const day = myDate.getUTCDay();
+    const day = myDate.getUTCDate();
+
+    console.log('is month and day variable correct (month-1)?')
+    console.log(month);
+    console.log(day);
+
+    console.log('sending correct month and day variable to loadSign');
+    loadSign(myDate, month, day);
 }
 
 form.addEventListener('submit', handleFormSubmit, false);
 
-//function that check if height is within categories an assigns it to heights 1-5
-
-//function random number generator
-
-//function that loads the correct wand length based on random and height
-
-//function that saves your name and loads it in text that says "____ your wand is:"
-
-//function that takes the date and corresponds it to signs
-
-//function that loads specific wand based on each sign
-
-function loadSign(date){
+function loadSign(date, month, day){
     //use Assign Zodiac to find which sign it is based on the date
-    var mySign = assignZodiac(date);
+    console.log('running assignZodiac giving month and day');
+    var mySign = assignZodiac(month, day);
+
+    //use displaySign to reveal the appropriate information in the wandDetails field
+    console.log('displaying sign');
     displaySign(mySign);
 }
 
-function assignZodiac(birthdate){
-    var whichMonth = birthdate.getUTCMonth;
-    var whichDayOfMonth = birthdate.getUTCDay;
+function assignZodiac(month, day){
+    var whichMonth = month;
+    var whichDayOfMonth = day;
+
+    console.log('Assign Zodiac month and day');
+    console.log(whichMonth);
+    console.log(whichDayOfMonth);
 
     if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 0 && whichDayOfMonth <= 19)) {
         AstroSign = "Cap";
@@ -80,38 +82,57 @@ function assignZodiac(birthdate){
         AstroSign = "Pis";
       } else if ((whichMonth == 0 && whichDayOfMonth >= 20) || (whichMonth == 1 && whichDayOfMonth <= 18)) {
         AstroSign = "Aqu";
+      } else{
+          console.log('something went wrong and sign does not correspond to a date listed');
       }
 
+      console.log(AstroSign);
       return AstroSign;
 }
 
 function displaySign(sign){
-    //display appropriate zodiac sign here
+    
     document.getElementById('wandDetails').hidden = false;
+    var wand = document.getElementById('wandDetails');
+
     if (sign === "Cap"){
-        //load wand 1 stuff
+        var wandDescription = document.createTextNode('10 3/4 inch oak wand with a dragon heartstring core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Sag"){
-        //load wand 2 stuff
+        var wandDescription = document.createTextNode('9 1/2 inch birch wand with a unicorn horn core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Sco"){
-        //load wand 3 stuff
+        var wandDescription = document.createTextNode('8 1/4 inch redwood wand with a pheonix feather core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Lib"){
-        //load wand 4 stuff
+        var wandDescription = document.createTextNode('11 3/4 inch ash wand with a hippogriff hair core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Vir"){
-        //load wand 5 stuff
+        var wandDescription = document.createTextNode('12 1/4 inch hawthorn wand with a veela hair core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Leo"){
-        //load wand 6 stuff
+        var wandDescription = document.createTextNode('9 1/2 inch cherry wand with a mermaid scale core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Can"){
-        //load wand 7 stuff
+        var wandDescription = document.createTextNode('10 3/4th inch cedar wand with a thestral tail-hair core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Gem"){
-        //load wand 8 stuff
+        var wandDescription = document.createTextNode('8 3/4th inch walnut wand with a troll whisker core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Tau"){
-        //load wand 9 stuff
+        var wandDescription = document.createTextNode('11 1/4th inch rosewood wand with a mermaid scale core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Ari"){
-        //load wand 10 stuff
+        var wandDescription = document.createTextNode('12 1/2th inch pine wand with a hippogriff hair core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Pis"){
-        //load wand 11 stuff
+        var wandDescription = document.createTextNode('11 3/4th inch dogwood wand with a dragon heartstring core');
+        wand.appendChild(wandDescription);
     } else if (sign === "Aqu"){
-        //load wand 12 stuff
+        var wandDescription = document.createTextNode('9 1/4th inch ginko wand with dragon a troll whisker core');
+        wand.appendChild(wandDescription);
+    } else {
+        console.log('your wand could not load your wand details');
     }
 }
 
