@@ -34,3 +34,8 @@ flexibility*:
 TO DO:
 
 change the displayed text element in java based off which sign it is
+
+
+
+When element on page is clicked, go to display zodiac and pass in whichever string corresponds
+to what was clicked

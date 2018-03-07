@@ -17,28 +17,16 @@ function handleFormSubmit(event){
         feedbackDate.hidden = true;
     }
 
-    //console.log('Form Submitted', event);
-    // console.group('Selecyed Date Information');
-    // console.log('myDate: ' + myDate);
-
-    // console.log('Month: '+ myDate.getUTCMonth());
-    // console.log('Day: '+myDate.getUTCDate());
-    // console.log('Year: '+myDate.getUTCFullYear());
-
-    // console.groupEnd();
-
     const month = myDate.getUTCMonth();
     const day = myDate.getUTCDate();
 
-    console.log('is month and day variable correct (month-1)?')
-    console.log(month);
-    console.log(day);
-
-    console.log('sending correct month and day variable to loadSign');
+    console.log('sending qmonth and day variable to loadSign');
     loadSign(myDate, month, day);
 }
 
+
 form.addEventListener('submit', handleFormSubmit, false);
+
 
 function loadSign(date, month, day){
     //use Assign Zodiac to find which sign it is based on the date
@@ -49,6 +37,7 @@ function loadSign(date, month, day){
     console.log('displaying sign');
     displaySign(mySign);
 }
+
 
 function assignZodiac(month, day){
     var whichMonth = month;
@@ -90,47 +79,36 @@ function assignZodiac(month, day){
       return AstroSign;
 }
 
+
 function displaySign(sign){
     
     document.getElementById('wandDetails').hidden = false;
-    var wand = document.getElementById('wandDetails');
+    var wandDescription = document.getElementById('wandDescription');
 
     if (sign === "Cap"){
-        var wandDescription = document.createTextNode('10 3/4 inch oak wand with a dragon heartstring core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '10 3/4 inch oak wand with a dragon heartstring core';
     } else if (sign === "Sag"){
-        var wandDescription = document.createTextNode('9 1/2 inch birch wand with a unicorn horn core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '9 1/2 inch birch wand with a unicorn horn core';
     } else if (sign === "Sco"){
-        var wandDescription = document.createTextNode('8 1/4 inch redwood wand with a pheonix feather core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '8 1/4 inch redwood wand with a pheonix feather core';
     } else if (sign === "Lib"){
-        var wandDescription = document.createTextNode('11 3/4 inch ash wand with a hippogriff hair core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '11 3/4 inch ash wand with a hippogriff hair core';
     } else if (sign === "Vir"){
-        var wandDescription = document.createTextNode('12 1/4 inch hawthorn wand with a veela hair core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '12 1/4 inch hawthorn wand with a veela hair core';
     } else if (sign === "Leo"){
-        var wandDescription = document.createTextNode('9 1/2 inch cherry wand with a mermaid scale core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '9 1/2 inch cherry wand with a mermaid scale core';
     } else if (sign === "Can"){
-        var wandDescription = document.createTextNode('10 3/4th inch cedar wand with a thestral tail-hair core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '10 3/4th inch cedar wand with a thestral tail-hair core';
     } else if (sign === "Gem"){
-        var wandDescription = document.createTextNode('8 3/4th inch walnut wand with a troll whisker core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '8 3/4th inch walnut wand with a troll whisker core';
     } else if (sign === "Tau"){
-        var wandDescription = document.createTextNode('11 1/4th inch rosewood wand with a mermaid scale core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '11 1/4th inch rosewood wand with a mermaid scale core';
     } else if (sign === "Ari"){
-        var wandDescription = document.createTextNode('12 1/2th inch pine wand with a hippogriff hair core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '12 1/2th inch pine wand with a hippogriff hair core';
     } else if (sign === "Pis"){
-        var wandDescription = document.createTextNode('11 3/4th inch dogwood wand with a dragon heartstring core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '11 3/4th inch dogwood wand with a dragon heartstring core';
     } else if (sign === "Aqu"){
-        var wandDescription = document.createTextNode('9 1/4th inch ginko wand with dragon a troll whisker core');
-        wand.appendChild(wandDescription);
+        wandDescription.innerHTML = '9 1/4th inch ginko wand with dragon a troll whisker core';
     } else {
         console.log('your wand could not load your wand details');
     }
