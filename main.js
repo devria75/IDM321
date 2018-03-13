@@ -20,6 +20,8 @@ function handleFormSubmit(event){
     const month = myDate.getUTCMonth();
     const day = myDate.getUTCDate();
 
+    //stop all audio if it's playing
+
     console.log('sending qmonth and day variable to loadSign');
     loadSign(myDate, month, day);
 }
@@ -87,28 +89,40 @@ function displaySign(sign){
 
     if (sign === "Cap"){
         wandDescription.innerHTML = '10 3/4 inch oak wand with a dragon heartstring core';
+        document.getElementById('recording01').play();
     } else if (sign === "Sag"){
         wandDescription.innerHTML = '9 1/2 inch birch wand with a unicorn horn core';
+        document.getElementById('recording02').play();
     } else if (sign === "Sco"){
         wandDescription.innerHTML = '8 1/4 inch redwood wand with a pheonix feather core';
+        document.getElementById('recording03').play();
     } else if (sign === "Lib"){
         wandDescription.innerHTML = '11 3/4 inch ash wand with a hippogriff hair core';
+        document.getElementById('recording04').play();
     } else if (sign === "Vir"){
         wandDescription.innerHTML = '12 1/4 inch hawthorn wand with a veela hair core';
+        document.getElementById('recording05').play();
     } else if (sign === "Leo"){
         wandDescription.innerHTML = '9 1/2 inch cherry wand with a mermaid scale core';
+        document.getElementById('recording06').play();
     } else if (sign === "Can"){
         wandDescription.innerHTML = '10 3/4th inch cedar wand with a thestral tail-hair core';
+        document.getElementById('recording07').play();
     } else if (sign === "Gem"){
         wandDescription.innerHTML = '8 3/4th inch walnut wand with a troll whisker core';
+        document.getElementById('recording08').play();
     } else if (sign === "Tau"){
         wandDescription.innerHTML = '11 1/4th inch rosewood wand with a mermaid scale core';
+        document.getElementById('recording09').play();
     } else if (sign === "Ari"){
         wandDescription.innerHTML = '12 1/2th inch pine wand with a hippogriff hair core';
+        document.getElementById('recording10').play();
     } else if (sign === "Pis"){
         wandDescription.innerHTML = '11 3/4th inch dogwood wand with a dragon heartstring core';
+        document.getElementById('recording11').play();
     } else if (sign === "Aqu"){
         wandDescription.innerHTML = '9 1/4th inch ginko wand with dragon a troll whisker core';
+        document.getElementById('recording12').play();
     } else {
         console.log('your wand could not load your wand details');
     }
