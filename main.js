@@ -22,7 +22,6 @@ function handleFormSubmit(event){
 
     //stop all audio if it's playing
 
-    console.log('sending qmonth and day variable to loadSign');
     loadSign(myDate, month, day);
 }
 
@@ -31,6 +30,16 @@ function handleFormSubmit(event){
 //--------------------------------------------------------------------------------------
 
 form.addEventListener('submit', handleFormSubmit, false);
+
+var helpIcon = document.getElementById('helpIcon');
+helpIcon.addEventListener('mouseover', function() {
+    document.getElementById('overlay').hidden = false;
+    document.getElementById('helpInfo').hidden = false;
+}, false);
+helpIcon.addEventListener('mouseout', function() {
+    document.getElementById('overlay').hidden = true;
+    document.getElementById('helpInfo').hidden = true;
+}, false);
 
 {
     //get all wand element ids
@@ -92,11 +101,9 @@ form.addEventListener('submit', handleFormSubmit, false);
 
 function loadSign(date, month, day){
     //use Assign Zodiac to find which sign it is based on the date
-    console.log('running assignZodiac giving month and day');
     var mySign = assignZodiac(month, day);
 
     //use displaySign to reveal the appropriate information in the wandDetails field
-    console.log('displaying sign');
     displaySign(mySign);
 }
 
@@ -108,9 +115,9 @@ function assignZodiac(month, day){
     var whichMonth = month;
     var whichDayOfMonth = day;
 
-    console.log('Assign Zodiac month and day');
-    console.log(whichMonth);
-    console.log(whichDayOfMonth);
+    // console.log('Assign Zodiac month and day');
+    // console.log(whichMonth);
+    // console.log(whichDayOfMonth);
 
     if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 0 && whichDayOfMonth <= 19)) {
         AstroSign = "Cap";

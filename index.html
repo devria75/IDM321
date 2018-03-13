@@ -9,12 +9,24 @@
 </head>
 <body>
     <div class="mainBody">
-        
+
         <!-- title -->
         <div class="wandasWands">
             <p>Welcome to</p>
             <h1>Wanda's Wizarding Wands</h1>
-            <p>Please enter the your information below, or hover over the help icon if you're confused.</p>
+        </div>
+
+        <div class="helpIcon">
+            <img src="help_icon.png" alt="help icon" id="helpIcon">
+        </div>
+        <div class="overlay" id="overlay" hidden></div>
+        <div class="helpInfo" id="helpInfo" hidden>
+            <p>Enter your name here</p>
+            <p><img src="arrow.png" alt="arrow" style="margin-top: -15px;"></p>
+            <p>Enter your birthday here</p>
+            <p><img src="arrow.png" alt="arrow" style="margin-top: -15px;"></p>
+            <p>Then click submit to see your wand</p>
+            <p><img src="arrow.png" alt="arrow" style="margin-top: -15px;"></p>
         </div>
 
         <!-- input form -->
@@ -22,9 +34,11 @@
             <form action"index.html" method="post" id="myForm" name="myForm">
                 <label for="name">First Name:</label><br>
                 <input type="text" value="Jessica" name="nameInput" id="nameInput" placeholder="Jessica" required><br>
+                <br>
                 <label for="date">Birthday:</label><br>
                 <input type="date" name="date" id="date" required>
                 <p class="feedback" hidden>Please Enter a Valid Date</p>
+                <br> <br>
                 <div class="control">
                     <input type="submit" value="Submit" id="submit">
                 </div>

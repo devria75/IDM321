@@ -66,3 +66,30 @@ text{
     top: 0%;
     position: absolute;
 }
+
+.helpIcon{
+    position: absolute;
+    left: 5 px;
+    top: 5 px;
+    z-index: 3;
+}
+
+.helpInfo{
+    position: absolute;
+    left: 22%;
+    top: 30%;
+    z-index: 3;
+    line-height: 1em;
+    line-break: -2em;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,.75);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
