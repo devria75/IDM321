@@ -88,6 +88,7 @@ function displaySign(sign){
     var wandDescription = document.getElementById('wandDescription');
 
     if (sign === "Cap"){
+        //replace wand image spot with actual wand
         wandDescription.innerHTML = '10 3/4 inch oak wand with a dragon heartstring core';
         document.getElementById('recording01').play();
     } else if (sign === "Sag"){

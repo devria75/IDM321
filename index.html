@@ -8,36 +8,28 @@
     <link rel="stylesheet" type="text/css" media="screen" href="master.css" />
 </head>
 <body>
-    <h1>Welcome to Wanda's Wizarding Wands</h1>
-    <p>Please enter the your information below, or hover over the help icon if you're confused.</p>
-    <form action"index.html" method="post" id="myForm" name="myForm">
-        <!-- <legend>Wand Information</legend>
-        First name:<br>
-        <input type="text" value="Jessica"name="nameInput" id="nameInput" placeholder="Jessica" required><br>
-        <label for="date">Birthday:</label><br>
-        <input type="date" name="birthdayInput" id="birthdayInput" required><br>
-        <label for="heightFeet">Height:</label>
-        <input type="number" value="5"name="heightFeetInput" min="0" max="8" id="heightFeetInput" required>
-        <label for="heightInches"></label>
-        <input type="number" value="4"name="heightInchesInput" min="0" max="11" id="heightInchesInput" required>
-        <br><br>
-        <div class="control">
-            <input type="submit" value="Submit" id="submit">
-        </div> -->
-        <label for="name">First Name:</label><br>
-        <input type="text" value="Jessica" name="nameInput" id="nameInput" placeholder="Jessica" required><br>
-        <label for="date">Birthday:</label><br>
-        <input type="date" name="date" id="date" required>
-        <p class="feedback" hidden>Please Enter a Valid Date</p>
-        <div class="control">
-            <input type="submit" value="Submit" id="submit">
+    <div class="mainBody">
+        <h1>Welcome to Wanda's Wizarding Wands</h1>
+        <p>Please enter the your information below, or hover over the help icon if you're confused.</p>
+        <div class="formInputs">
+            <form action"index.html" method="post" id="myForm" name="myForm">
+                <label for="name">First Name:</label><br>
+                <input type="text" value="Jessica" name="nameInput" id="nameInput" placeholder="Jessica" required><br>
+                <label for="date">Birthday:</label><br>
+                <input type="date" name="date" id="date" required>
+                <p class="feedback" hidden>Please Enter a Valid Date</p>
+                <div class="control">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
         </div>
-    </form>
+    </div>
     
-    <!-- wands go here in a semi circle -->
+    <!-- wands go here -->
 
     <div id="wandDetails" hidden>
         <h2 id="yourWandIs">Your Wand Is:</h2>
+        <img src="wands/wand1.png" alt="yourWand" id="yourWand">
         <p id='wandDescription'>wand details</p>
     </div>
 
@@ -56,6 +48,21 @@
     <audio src="audio/Recording10.mp3" preload="auto" id="recording10"></audio>
     <audio src="audio/Recording11.mp3" preload="auto" id="recording11"></audio>
     <audio src="audio/Recording12.mp3" preload="auto" id="recording12"></audio>
-    
+
+    <div class="allWands">
+        <img src="wands/wand1.png" alt="wand 1" id="wand01">
+        <img src="wands/wand2.png" alt="wand 2" id="wand02">
+        <img src="wands/wand3.png" alt="wand 3" id="wand03">
+        <img src="wands/wand4.png" alt="wand 4" id="wand04">
+        <img src="wands/wand5.png" alt="wand 5" id="wand05">
+        <img src="wands/wand6.png" alt="wand 6" id="wand06">
+        <img src="wands/wand7.png" alt="wand 7" id="wand07">
+        <img src="wands/wand8.png" alt="wand 8" id="wand08">
+        <img src="wands/wand9.png" alt="wand 9" id="wand09">
+        <img src="wands/wand10.png" alt="wand 10" id="wand10">
+        <img src="wands/wand11.png" alt="wand 11" id="wand11">
+        <img src="wands/wand12.png" alt="wand 12" id="wand12">
+    </div>
+
 </body>
 </html>

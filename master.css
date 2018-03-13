@@ -1,5 +1,5 @@
 body{
-background-color: #383838;
+    background-image: url("wand_shop_background.jpg");
 }
 
 h1{
@@ -20,4 +20,26 @@ label{
 
 text{
     color: white;
+}
+
+.formInputs{
+    background-color: rgba(160,20,25,.75);
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 15%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.allWands {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 90%;
+    background-color: rgba(0,0,0,.75);
+    overflow-x: hidden;
+    padding-top: 5px;
 }
