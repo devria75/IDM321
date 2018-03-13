@@ -24,8 +24,9 @@ text{
 
 .formInputs{
     background-color: rgba(160,20,25,.75);
-    margin-left: 10%;
-    margin-top: 10%;
+    position: absolute;
+    top: 33%;
+    left: 5%;
     width: 15%;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -42,4 +43,26 @@ text{
     background-color: rgba(0,0,0,.75);
     overflow-x: hidden;
     padding-top: 5px;
+}
+
+.wandDetails{
+    position: absolute;
+    background-color: rgba(0,0,0,.75); 
+    top: 33%;
+    left: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.wandasWands{
+    background-color: rgba(0,0,0,.75); 
+    width: 50%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 25%;
+    top: 0%;
+    position: absolute;
 }

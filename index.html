@@ -9,8 +9,15 @@
 </head>
 <body>
     <div class="mainBody">
-        <h1>Welcome to Wanda's Wizarding Wands</h1>
-        <p>Please enter the your information below, or hover over the help icon if you're confused.</p>
+        
+        <!-- title -->
+        <div class="wandasWands">
+            <p>Welcome to</p>
+            <h1>Wanda's Wizarding Wands</h1>
+            <p>Please enter the your information below, or hover over the help icon if you're confused.</p>
+        </div>
+
+        <!-- input form -->
         <div class="formInputs">
             <form action"index.html" method="post" id="myForm" name="myForm">
                 <label for="name">First Name:</label><br>
@@ -23,31 +30,20 @@
                 </div>
             </form>
         </div>
+
     </div>
     
-    <!-- wands go here -->
 
-    <div id="wandDetails" hidden>
-        <h2 id="yourWandIs">Your Wand Is:</h2>
+    <!-- wand group -->
+
+    <div id="wandDetails" class="wandDetails" hidden>
+        <h2 id="yourWandIs">Your Wand</h2>
         <img src="wands/wand1.png" alt="yourWand" id="yourWand">
         <p id='wandDescription'>wand details</p>
     </div>
 
-    <script src="main.js"></script>
 
-    <!-- audio -->
-    <audio src="audio/Recording01.mp3" preload="auto" id="recording01"></audio>
-    <audio src="audio/Recording02.mp3" preload="auto" id="recording02"></audio>
-    <audio src="audio/Recording03.mp3" preload="auto" id="recording03"></audio>
-    <audio src="audio/Recording04.mp3" preload="auto" id="recording04"></audio>
-    <audio src="audio/Recording05.mp3" preload="auto" id="recording05"></audio>
-    <audio src="audio/Recording06.mp3" preload="auto" id="recording06"></audio>
-    <audio src="audio/Recording07.mp3" preload="auto" id="recording07"></audio>
-    <audio src="audio/Recording08.mp3" preload="auto" id="recording08"></audio>
-    <audio src="audio/Recording09.mp3" preload="auto" id="recording09"></audio>
-    <audio src="audio/Recording10.mp3" preload="auto" id="recording10"></audio>
-    <audio src="audio/Recording11.mp3" preload="auto" id="recording11"></audio>
-    <audio src="audio/Recording12.mp3" preload="auto" id="recording12"></audio>
+    <!-- clickable wand icons -->
 
     <div class="allWands">
         <img src="wands/wand1.png" alt="wand 1" id="wand01">
@@ -63,6 +59,24 @@
         <img src="wands/wand11.png" alt="wand 11" id="wand11">
         <img src="wands/wand12.png" alt="wand 12" id="wand12">
     </div>
+
+    <script src="main.js"></script>
+
+
+    <!-- audio -->
+
+    <audio src="audio/Recording01.mp3" preload="auto" id="recording01"></audio>
+    <audio src="audio/Recording02.mp3" preload="auto" id="recording02"></audio>
+    <audio src="audio/Recording03.mp3" preload="auto" id="recording03"></audio>
+    <audio src="audio/Recording04.mp3" preload="auto" id="recording04"></audio>
+    <audio src="audio/Recording05.mp3" preload="auto" id="recording05"></audio>
+    <audio src="audio/Recording06.mp3" preload="auto" id="recording06"></audio>
+    <audio src="audio/Recording07.mp3" preload="auto" id="recording07"></audio>
+    <audio src="audio/Recording08.mp3" preload="auto" id="recording08"></audio>
+    <audio src="audio/Recording09.mp3" preload="auto" id="recording09"></audio>
+    <audio src="audio/Recording10.mp3" preload="auto" id="recording10"></audio>
+    <audio src="audio/Recording11.mp3" preload="auto" id="recording11"></audio>
+    <audio src="audio/Recording12.mp3" preload="auto" id="recording12"></audio>
 
 </body>
 </html>
