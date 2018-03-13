@@ -31,6 +31,7 @@ flexibility*:
 
 *may not be used
 
+<<<<<<< HEAD
 TO DO:
 
 change the displayed text element in java based off which sign it is
@@ -39,3 +40,17 @@ change the displayed text element in java based off which sign it is
 
 When element on page is clicked, go to display zodiac and pass in whichever string corresponds
 to what was clicked
+=======
+1.	Amazing! This wand never bonds with wizards! Treat it well.
+2.	You’re a lucky wizard to have been chosen by that wand.
+3.	This wand rarely bonds, I hope you two learn wonderful spell together!
+4.	This wand is extremely sturdy, it’ll serve you well
+5.	This wand may be a bit temperamental but you’ll learn it in time.
+6.	The harder you work with this wand, the stronger your spells will be!
+7.	This wand is always itching for a fight, use it wisely.
+8.	This is one of the most beautiful wands I’ve had the pleasure of working with.
+9.	Treat this wand well and it will serve you for years to come.
+10.	This wand only obeys those of strong will, stay sound and be careful.
+11.	This wand may not look it but it’s extremely dependable.
+12.	This wand will be able to withstand any spell you give it, just be patient.
+>>>>>>> f51e255f896828cdf03c3435b6af2f007ea9d152
