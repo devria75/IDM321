@@ -23,7 +23,7 @@ text{
 }
 
 .formInputs{
-    background-color: rgba(160,20,25,.75);
+    background-color: rgba(0,0,0,.75); 
     position: absolute;
     top: 33%;
     left: 5%;
@@ -31,6 +31,7 @@ text{
     padding-left: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
+    z-index: 3;
 }
 
 .allWands {
@@ -43,6 +44,12 @@ text{
     background-color: rgba(0,0,0,.75);
     overflow-x: hidden;
     padding-top: 5px;
+    /* transition: whatever property I'm changing */
+}
+
+.allWands img:hover{
+    cursor: pointer;
+    /* get it in final position */
 }
 
 .wandDetails{

@@ -2,6 +2,10 @@
 const form = document.getElementById('myForm');
 var AstroSign = "none";
 
+//--------------------------------------------------------------------------------------
+//Form Submission Function
+//--------------------------------------------------------------------------------------
+
 function handleFormSubmit(event){
     event.preventDefault();
 
@@ -21,6 +25,7 @@ function handleFormSubmit(event){
     const day = myDate.getUTCDate();
 
     //stop all audio if it's playing
+    //audio.pause(); -- can't because audio is not called audio
 
     loadSign(myDate, month, day);
 }
