@@ -58,3 +58,22 @@ flexibility*:
         <div class="control">
             <input type="submit" value="Submit" id="submit">
         </div> -->
+
+
+To do:
+
+-add a 2 fonts
+    a title font for "Wandas Wands"
+    and body font for the rest of the text
+
+-make help screen also show that you can click on the right side
+
+-add styling the the background boxes maybe? Or at least the header
+
+
+
+X make wand box to display behind wand X
+X use "transitions" in CSS to either animate: X
+X a glow on hover X
+X or pulling out the wand slightly, like they're looking at it X
+
