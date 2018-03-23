@@ -6,17 +6,23 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="master.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
     <div class="mainBody">
 
+        <!-- ___________________________________________________________________ -->
         <!-- title -->
+        <!-- ___________________________________________________________________ -->
+
         <div class="wandasWands">
-            <p>Welcome to</p>
-            <h1>Wanda's Wizarding Wands</h1>
+            <img src="wandaswandstitle.png" alt="wandasWandsTitle" class="title">
         </div>
-        
+
+        <!-- ___________________________________________________________________ -->
         <!-- help -->
+        <!-- ___________________________________________________________________ -->
+
         <div class="helpIcon">
             <img src="help_icon.png" alt="help icon" id="helpIcon">
         </div>
@@ -28,12 +34,19 @@
             <p><img src="arrow.png" alt="arrow" style="margin-top: -15px;"></p>
             <p>Then click submit to see your wand</p>
             <p><img src="arrow.png" alt="arrow" style="margin-top: -15px;"></p>
+            <div class="helpBracket">
+                <p class="bracketText">Click on any of these to view other wand options</p>
+                <p><img src="bracket.png" alt="bracket" height="900px"></p>
+            </div>
         </div>
 
+        <!-- ___________________________________________________________________ -->
         <!-- input form -->
+        <!-- ___________________________________________________________________ -->
+
         <div class="formInputs">
             <form action"index.html" method="post" id="myForm" name="myForm">
-                <label for="name">First Name:</label><br>
+                <label for="name">Name:</label><br>
                 <input type="text" value="Jessica" name="nameInput" id="nameInput" placeholder="Jessica" required><br>
                 <br>
                 <label for="date">Birthday:</label><br>
@@ -48,20 +61,22 @@
 
     </div>
     
-
+    <!-- ___________________________________________________________________ -->
     <!-- wand group -->
+    <!-- ___________________________________________________________________ -->
 
-    <div id="wandDetails" class="wandDetails" >
-        <div class="wandText">
-            <h2 id="yourWandIs">Your Wand</h2>
-            <p id='wandDescription'>wand details are here this is the wand details</p>
-        </div>
+    <div id="wandDetails" class="wandDetails" hidden>
         <img src="wand_box.png" alt="wandBox" id="wandBox" class="wandBox">
         <img src="wands/wand1.png" alt="yourWand" id="yourWand" class="singleWand">
+        <div class="wandText">
+            <h3 id="yourWandIs">Your Wand is:</h3>
+            <p id='wandDescription'>wand details are here this is the wand details</p>
+        </div>
     </div>
 
-
+    <!-- ___________________________________________________________________ -->
     <!-- clickable wand icons -->
+    <!-- ___________________________________________________________________ -->
 
     <div class="allWands">
         <img src="wands/wand1.png" alt="wand 1" id="wand01">
@@ -78,10 +93,14 @@
         <img src="wands/wand12.png" alt="wand 12" id="wand12">
     </div>
 
+    <!-- ___________________________________________________________________ -->
+    <!-- javascript load -->
+    <!-- ___________________________________________________________________ -->
     <script src="main.js"></script>
 
-
+    <!-- ___________________________________________________________________ -->
     <!-- audio -->
+    <!-- ___________________________________________________________________ -->
 
     <audio src="audio/Recording01.mp3" preload="auto" id="recording01"></audio>
     <audio src="audio/Recording02.mp3" preload="auto" id="recording02"></audio>

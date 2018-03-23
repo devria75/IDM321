@@ -1,10 +1,10 @@
 {
-const form = document.getElementById('myForm');
-var AstroSign = "none";
-
 //--------------------------------------------------------------------------------------
 //Form Submission Function
 //--------------------------------------------------------------------------------------
+
+const form = document.getElementById('myForm');
+var AstroSign = "none";
 
 function handleFormSubmit(event){
     event.preventDefault();
@@ -23,9 +23,6 @@ function handleFormSubmit(event){
 
     const month = myDate.getUTCMonth();
     const day = myDate.getUTCDate();
-
-    //stop all audio if it's playing
-    //audio.pause(); -- can't because audio is not called audio
 
     loadSign(myDate, month, day);
 }
@@ -119,10 +116,6 @@ function loadSign(date, month, day){
 function assignZodiac(month, day){
     var whichMonth = month;
     var whichDayOfMonth = day;
-
-    // console.log('Assign Zodiac month and day');
-    // console.log(whichMonth);
-    // console.log(whichDayOfMonth);
 
     if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 0 && whichDayOfMonth <= 19)) {
         AstroSign = "Cap";

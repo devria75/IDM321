@@ -1,28 +1,38 @@
 /* ---------------------------------------
     backgrounds and basic text style
 --------------------------------------- */
+@font-face {
+    font-family: "Homemade Apple";
+    src: url("fonts/HomemadeApple-Regular.ttf");
+}
+
 body{
     background-image: url("wand_shop_background.jpg");
 }
 
 h1{
     color: white;
+    font-family: 'Homemade Apple', Arial, cursive;
 }
 
 p{
     color: white;
+    font-family: 'Homemade Apple', Arial, cursive;
 }
 
-h2{
+h3{
     color: white;
+    font-family: 'Homemade Apple', Arial, cursive;
 }
 
 label{
     color: white;
+    font-family: 'Homemade Apple', Arial, cursive;
 }
 
 text{
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ---------------------------------------
@@ -40,12 +50,50 @@ text{
     z-index: 3;
 }
 
+input[type=text] {
+    width: 90%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.13);
+    color: white;
+    border: none;
+    border-bottom: 2px black;
+}
+
+input[type=text]:focus {
+    border: 1px solid whitesmoke;
+}
+
+input[type=date] {
+    width: 90%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.13);
+    color: white;
+    border: none;
+    border-bottom: 2px black;
+}
+
+input[type=date]:focus {
+    border: 1px solid whitesmoke;
+}
+
+input[type=submit] {
+    background-color: rgba(255, 255, 255, 0.527);
+    border: none;
+    color: black;
+    padding: 10px 112px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 /* ---------------------------------------
     right side all wands styling
 --------------------------------------- */
 .allWands {
     width: 10%;
-    height: 100%;
+    height: 95%;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -55,7 +103,6 @@ text{
     padding-top: 10px;
     line-height: 2.5em;
     transition: all 0.3s ease-in-out;
-    /* transition: whatever property I'm changing */
 }
 
 .allWands img:hover{
@@ -63,7 +110,6 @@ text{
     background-color: rgba(255, 206, 143, 0.5);
     border-color: #66afe9;
     box-shadow: 0 0 25px rgba(255, 206, 143, 0.904);
-    /* get it in final position */
 }
 
 /* ---------------------------------------
@@ -81,21 +127,25 @@ text{
 .wandText{
     background-color: rgba(0,0,0,.75);
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 100%;
+    line-height: 1.5em;
+    position: absolute;
+    top: 475px;
+    font-size: 14pt;
 }
 
 .wandBox{
     position: absolute;
-    top: 40%;
+    top: -75px;
     left: 0%;
     width: 100%;
 }
 
 .singleWand{
     position: absolute;
-    top: 248%;
+    top: 275px;
     left: 11%;
     transform: rotate(-20deg);
     width: 80%;
@@ -105,14 +155,16 @@ text{
     title styling
 --------------------------------------- */
 .wandasWands{
-    background-color: rgba(0,0,0,.75); 
     width: 50%;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     left: 25%;
-    top: 0%;
     position: absolute;
+}
+
+.title{
+    max-height: 200px;
 }
 
 /* ---------------------------------------
@@ -128,10 +180,11 @@ text{
 .helpInfo{
     position: absolute;
     left: 22%;
-    top: 30%;
+    top: 35%;
     z-index: 3;
     line-height: 1em;
-    line-break: -2em;
+    line-break: -3em;
+    font-size: 14pt;
 }
 
 .overlay{
@@ -143,4 +196,19 @@ text{
     height: 100%;
     z-index: 2;
     overflow: hidden;
+}
+
+.helpBracket{
+    position: absolute;
+    top: -350px;
+    left: 1100px;
+}
+
+.bracketText{
+    position: absolute;
+    top: 400px;
+    left: -250px;
+    width: 250px;
+    font-size: 18pt;
+    line-height: 1.25em;
 }
